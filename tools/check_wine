@@ -53,7 +53,7 @@ install_7z(){
 install_wine(){
 	if [ ! -x /usr/bin/wine -a ! -x /usr/local/bin/wine ]; then
 		echo "Installing wine..."
-		sudo apt-get install wine #TBD do not assume apt
+		sudo apt install wine-development #TBD do not assume apt
 	fi
 	#echo "Creating wine folder..."
 	#wineprefixcreate --prefix "$WINEPREFIX"
